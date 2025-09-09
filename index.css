@@ -1,0 +1,44 @@
+h1 {
+ color: beige;
+ background: linear-gradient(135deg, red, blue);
+ text-align: center; 
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav h4 {
+ color: hotpink; 
+ text-align: left;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav li {
+ list-style-type: square;
+ color: hotpink;
+ text-align: left;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+li a {
+    color: hotpink;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div section article {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+button {
+  border-radius: 15px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, pink, orange);
+  color: purple;
+  border: none;
+  transition: 0.3s;
+}
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
