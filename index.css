@@ -29,6 +29,24 @@ div section article {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/*
+nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  background: lightblue;
+  padding: 10px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+}
+nav a:hover {
+  background: lightblue;
+  border-radius: 5px;
+} 
+*/ 
 
 button {
   border-radius: 15px;
