@@ -1,0 +1,23 @@
+h1 {
+    color: whitesmoke;
+    background: linear-gradient(135deg, pink, orange);
+    text-align: center; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    caption-side: bottom;
+    width: 100%;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.other-table {
+    border: 2px solid hotpink;
+    border-radius: 10px;
+    overflow: hidden;
+    empty-cells: hidden;
+}
