@@ -12,12 +12,19 @@ table {
     width: 100%;
     margin-bottom: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 200px;
 
 }
 
-.other-table {
-    border: 2px solid hotpink;
-    border-radius: 10px;
-    overflow: hidden;
-    empty-cells: hidden;
+button {
+  border-radius: 15px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, pink, orange);
+  color: beige;
+  border: none;
+  transition: 0.3s;
+}
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }

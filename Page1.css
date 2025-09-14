@@ -1,3 +1,10 @@
+h1 {
+    color: whitesmoke;
+    background: linear-gradient(135deg, pink, orange);
+    text-align: center; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 section article{
     color: hotpink;
     text-align: center;
@@ -14,4 +21,24 @@ summary {
     color: hotpink;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button {
+    border-radius: 15px;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, pink, orange);
+    color: beige;
+    border: none;
+    transition: 0.3s;
+}
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
 }
