@@ -1,4 +1,3 @@
-
 h1 {
   color: beige;
   background: linear-gradient(135deg, pink, orange);
@@ -25,19 +24,6 @@ div section article img {
     width: 180px;
 }
 
-button {
-  border-radius: 15px;
-  padding: 10px 20px;
-  background: linear-gradient(135deg, pink, orange);
-  color: beige;
-  border: none;
-  transition: 0.3s;
-}
-button:hover {
-  transform: scale(1.1);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
-
 div aside {
     background-color: pink;
     text-align: top center;
@@ -52,10 +38,10 @@ div aside {
     top: 75px;
 }
 
-div aside .photo {
+div section .photo img{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     position: sticky;
-    left: 50%;
+    right: center;
 }
 div aside ul {
     text-align: left;
@@ -85,8 +71,7 @@ div aside ul {
 }
 
 footer {
-  background: linea
-  r-gradient(135deg, pink, orange);
+  background: linear-gradient(135deg, pink, orange);
   color: beige;
   text-align: center;
   padding: 5px;
@@ -95,3 +80,36 @@ footer {
   width: 100%;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+.submenu-parent:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+}
+
+.submenu {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  color: lawngreen;
+  transition: opacity 0.3s ease;
+}
+
+button {
+  border-radius: 15px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, pink, orange);
+  color: beige;
+  border: none;
+  transition: 0.3s;
+}
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+

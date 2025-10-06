@@ -1,0 +1,21 @@
+header, footer{
+    display: none;
+}
+
+main {
+    width: 100%;
+    font-size: 14pt;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+img { 
+    display: none;
+}
