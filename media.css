@@ -5,8 +5,8 @@ h1 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-
-div section article {
+div section article p{
+    opacity: 0; 
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -14,29 +14,27 @@ div section article {
 div section article img {
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    height: 230px;
-    width: 180px;
+    height: 153px;
+    width: 120px;
+    display: flex;
+    left :100px;
+    top :230px;
 }
 
 div aside {
     background-color: pink;
     text-align: top center;
-    height: 250px;
-    width: 200px;
+    height: 200px;
+    width: 160px;
     border-radius: 8px;
     color: hotpink;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     list-style-type: circle;
     position: absolute;
     right: 10px;
-    top: 75px;
+    top: 160px;
 }
 
-div section .photo img{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    position: sticky;
-    right: center;
-}
 div aside ul {
     text-align: left;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -92,7 +90,4 @@ button:hover {
   transform: scale(1.1);
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
-
-
-
 
