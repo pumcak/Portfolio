@@ -1,50 +1,78 @@
-<!DOCTYPE html> <!-- HTML5 Doctype -->
+<!DOCTYPE html>
 <html lang="fr">
-<link type="text/css" rel="stylesheet" href="styles/index.css">
-<link type="text/css" rel="stylesheet" href="styles/commun.css">
-<link rel="stylesheet" media="screen and (max-width: 640px)" 
-  href="styles/media.css" type="text/css" />
   <head>
     <meta charset="UTF-8">
-    <title>Portfolio de Timéo Chabal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Timeo Chabal</title>
+    <link rel="stylesheet" href="styles/index.css">
   </head>
   <body>
-    <header>
-        <h1>Bienvenue sur mon portfolio</h1>
-        <nav class="navbar">
-                <a href="pages/scola.html"><button type = "button">Ma scolarité</button></a>
-                <a href="pages/myactivities.html"><button type = "button">Mes activités</button></a>
-                <div class = "submenu-parent"><a href="#"><button type = ripple>Médias</button></a>
-                    <div class = "submenu">
-                        <a href="pages/gallerie.html"><button>Images</button></a>
-                        <a href="pages/galerievideo.html"><button>Vidéos</button> </a>  
-                    </div>
-                </div>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <p class="brand">Portfolio de Timeo</p>
+        <nav class="navbar" aria-label="Navigation principale">
+          <a href="#about">A propos</a>
+          <a href="#projects">Projets perso</a>
+          <a href="#contact">Contact</a>
         </nav>
+      </div>
     </header>
-    
-    <div>
-        <section>
-            <article class="photo">
-                <img src="assets/images/profile.jpg"
-                title="photo profil" alt="C'est moi" width="140" height="140"/>
-                <p>Timéo Chabal</p>  
+
+    <main class="container">
+      <section class="hero">
+        <img
+          src="assets/images/profile.jpg"
+          alt="Portrait de Timeo Chabal"
+          class="profile-image"
+        >
+        <div>
+          <h1>Salut, moi c'est Timéo</h1>
+          <p class="intro">
+            Je suis etudiant en info et j'aime construire des projets web qui me ressemblent.
+            Ici je garde une base simple: du code clair, du style perso, et une progression visible.
+          </p>
+          <p class="status">Site en evolution - version perso</p>
+        </div>
+      </section>
+
+      <div class="layout-grid">
+        <section id="about" class="card about">
+          <h2>A propos</h2>
+          <p>
+            Je suis une personne curieuse, motivée et toujours prête à apprendre.
+            J’aime découvrir de nouvelles choses, relever des défis et évoluer chaque jour.
+            Sérieux(se) et impliqué(e), je donne le meilleur de moi-même dans tout ce que j’entreprends.
+          </p>
+        </section>
+
+        <section id="projects" class="card projects">
+          <h2>Projets</h2>
+          <div class="project-list">
+            <article class="project-item">
+              <h3>Projet 01 - A venir</h3>
+              <p>Une premiere app web perso avec une interface simple et des interactions en JavaScript.</p>
             </article>
-            <aside>
-                <h4>Retrouvez moi sur :</h4>
-                <ul>
-                    <li><a href="https://instagram.com/timeo.chbl"target="_blank"><button id="social" type = "ripple">Instagram</button></a></li>
-                    <li><a href="https://github.com/pumcak"target="_blank"><button id="social" type = "ripple">Github</button></a></li>
-                </ul>
-            </aside>
+            <article class="project-item">
+              <h3>Projet 02 - A venir</h3>
+              <p>Un projet académique sur la création d'une application en .NET MAUI reprenant un jeu de société appelé "Onitama".</p>
+            </article>
+          </div>
         </section>
-        <section>
-            <footer>
-                <p><h4>Moi en quelques mots :</h4></p>
-                <p>Lorem ipsum dolor sit amete...<a href="pages/knowmore1.html">Voir plus</a></p>
-            </footer>
+
+        <section id="contact" class="card contact">
+          <h2>Contact</h2>
+          <p>Tu peux me retrouver ici :</p>
+          <div class="social-links">
+            <a href="https://instagram.com/timeo.chbl">Instagram</a>
+            <a href="https://github.com/pumcak">GitHub</a>
+          </div>
         </section>
-    </div>   
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>Portfolio personnel de Timeo Chabal</p>
+    </footer>
   </body>
 </html>
 
