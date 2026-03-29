@@ -13,9 +13,13 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+a {
+  color: inherit;
+}
+
 .container {
   width: 92%;
-  max-width: 950px;
+  max-width: 980px;
   margin: 0 auto;
 }
 
@@ -30,40 +34,42 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 12px;
   padding: 12px 0;
 }
 
 .brand {
-  margin: 0;
-  font-size: 1.05rem;
   font-weight: 700;
   color: #fff2e2;
-  letter-spacing: 0.5px;
+  text-decoration: none;
 }
 
 .navbar {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .navbar a,
-.social-links a {
+.social-links a,
+.cta-link {
   display: inline-block;
   padding: 8px 14px;
   border-radius: 12px;
   text-decoration: none;
   color: #4f372d;
   background-color: #e8d8c7;
-  transition: 0.2s;
+  transition: transform 0.2s;
 }
 
 .navbar a:hover,
-.social-links a:hover {
+.social-links a:hover,
+.cta-link:hover {
   transform: translateY(-1px);
-  box-shadow: 0 5px 12px rgba(72, 40, 26, 0.25);
 }
 
-main {
+.page-home,
+.page-projects {
   padding: 28px 0 40px;
 }
 
@@ -92,14 +98,19 @@ h1 {
   color: #6b3f31;
 }
 
-.intro {
-  margin: 0;
+h2 {
+  margin-top: 0;
+  color: #7a4a38;
+}
+
+.intro,
+p {
   line-height: 1.6;
 }
 
 .status {
-  margin-top: 10px;
   display: inline-block;
+  margin: 10px 0 14px;
   background-color: #e8d4be;
   color: #6d4b3f;
   border-radius: 10px;
@@ -131,30 +142,20 @@ h1 {
 
 .contact {
   grid-column: 2;
-  grid-row: 1 / span 2;
+  grid-row: 1 / span 3;
   position: sticky;
   top: 85px;
-}
-
-h2 {
-  margin-top: 0;
-  color: #7a4a38;
-}
-
-p {
-  line-height: 1.6;
-}
-
-.social-links {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
 }
 
 .project-list {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+.project-list.two-cols {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .project-item {
@@ -164,13 +165,24 @@ p {
 }
 
 .project-item h3 {
-  margin-top: 0;
-  margin-bottom: 8px;
+  margin: 0 0 8px;
   color: #5f3b2f;
 }
 
 .project-item p {
   margin: 0;
+}
+
+.meta {
+  margin-top: 8px;
+  font-size: 0.92rem;
+  color: #7a5b4d;
+}
+
+.social-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .site-footer {
@@ -179,12 +191,7 @@ p {
   color: #6f4f41;
 }
 
-@media (max-width: 720px) {
-  .nav-wrap {
-    flex-direction: column;
-    gap: 12px;
-  }
-
+@media (max-width: 800px) {
   .layout-grid {
     grid-template-columns: 1fr;
   }
@@ -199,8 +206,8 @@ p {
     flex-direction: column;
     text-align: center;
   }
+
+  .project-list.two-cols {
+    grid-template-columns: 1fr;
+  }
 }
-
-
-
-
